@@ -25,6 +25,7 @@
                         "deep-grey": "#2d2d2d",
                         "bright-gold": "#63462d",
                         "soft-gold": "#f4eedc",
+                        "ivory": "#FAF9F6",
                     },
                     fontFamily: {
                         "display": ["Cormorant Garamond", "serif"],
@@ -83,7 +84,7 @@
         /* Paper Texture */
         .paper-texture {
             background-image:
-                linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+                linear-gradient(rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.50)),
                 url("https://www.transparenttextures.com/patterns/recycled-paper-texture.png");
             background-color: #fefefe;
             background-repeat: repeat;
@@ -107,7 +108,7 @@
             left: 1.5rem;
             /* Opposite side for balance or near right */
             z-index: 300;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(10px);
             padding: 0.5rem 1rem;
             border-radius: 99px;
@@ -316,8 +317,8 @@
         /* ============================= */
 
         .countdown-line {
-            border-top: 1px solid rgba(197, 168, 128, 0.2);
-            border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+            border-top: 1px solid rgba(99, 70, 45, 0.6);
+            border-bottom: 1px solid rgba(99, 70, 45, 0.6);
         }
 
         /* ============================= */
@@ -683,7 +684,7 @@
             top: 24px;
             /* Adjusted for frame */
             left: 24px;
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.5);
             padding: 5px 10px;
             border-radius: 4px;
             font-family: "Cormorant Garamond", serif;
@@ -771,7 +772,7 @@
                     </div>
                 </div>
             </div>
-            <p class="text-center mt-12 font-display italic text-charcoal tracking-[0.3em] text-[15px] uppercase animate-pulse"
+            <p class="text-center mt-12 font-display italic text-charcoal/80 tracking-[0.3em] text-[16px] uppercase font-normal animate-pulse"
                 data-t="seal_instruction">
                 Presiona el sello para abrir</p>
         </div>
@@ -820,10 +821,10 @@
                     "Así que no son ya más dos, sino una sola carne; por tanto, lo que Dios ha unido, que no lo
                     separe el hombre."
                 </p>
-                <div class="flex items-center justify-center gap-3 my-6">
-                    <div class="h-[0.5px] w-8 bg-bright-gold/40"></div>
+                <div class="flex items-center justify-center gap-3 py-8">
+                    <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
                     <div class="w-1.5 h-1.5 rotate-45 border border-bright-gold/60"></div>
-                    <div class="h-[0.5px] w-8 bg-bright-gold/40"></div>
+                    <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
                 </div>
                 <p class="font-sans text-[10px] uppercase tracking-[0.5em] text-deep-grey" data-t="biblical_ref">
                     Mateo 19:6</p>
@@ -831,12 +832,13 @@
         </section>
 
         <section class="text-center px-6 my-20">
-            <p class="font-sans text-[10px] uppercase tracking-[0.7em] text-bright-gold mb-16" data-t="joining_lives">
+            <p class="font-sans text-[11px] uppercase tracking-[0.6em] text-bright-gold mb-16" data-t="joining_lives">
                 Uniendo nuestras vidas
             </p>
             <div class="flex justify-center">
                 <img src="img/goldletters.png" alt="Laura & Marcus" class="max-w-[220px] md:max-w-[320px] h-auto" />
             </div>
+
         </section>
 
         <section class="mt-20 mb-32">
@@ -887,7 +889,7 @@
                     </h3>
                     <div class="grid grid-cols-1 gap-10">
                         <div class="space-y-1">
-                            <p class="font-sans text-[9px] uppercase tracking-[0.3em] text-bright-gold mb-2"
+                            <p class="font-sans text-[11px] uppercase tracking-[0.3em] text-bright-gold font-medium mb-2"
                                 data-t="bride_parents">
                                 Padres
                                 de la Novia</p>
@@ -895,7 +897,7 @@
                             <p class="text-lg font-display">Pablo Castillo García</p>
                         </div>
                         <div class="space-y-1">
-                            <p class="font-sans text-[9px] uppercase tracking-[0.3em] text-bright-gold mb-2"
+                            <p class="font-sans text-[11px] uppercase tracking-[0.3em] text-bright-gold font-medium mb-2"
                                 data-t="groom_parents">
                                 Padres
                                 del Novio</p>
@@ -907,12 +909,19 @@
 
             </div>
 
+            <div class="flex items-center justify-center gap-3 py-12">
+                <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+                <div class="w-1.5 h-1.5 rotate-45 border border-bright-gold/60"></div>
+                <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+            </div>
+
             <div class="space-y-8 pt-8 px-6 text-center">
                 <p class="intimate-dedication mb-6" data-t="godparents_intro">
                     A nuestros padrinos, gracias por ser testigos de nuestro amor y guiarnos con su ejemplo, por
                     sostenernos con sus oraciones y caminar a nuestro lado en este compromiso que hoy consagramos
                     ante Dios.
                 </p>
+
                 <p class="intimate-dedication mb-6" data-t="godparents_honor">
                     Gracias por aceptar este lugar tan especial en nuestras vidas.
                 </p>
@@ -926,11 +935,6 @@
                     <p class="text-lg font-display">Luis Alberto Galeana Rodríguez</p>
                 </div>
             </div>
-            <div class="flex items-center justify-center gap-3 py-4">
-                <div class="h-[0.5px] w-10 bg-bright-gold/30"></div>
-                <div class="w-1.5 h-1.5 rotate-45 border border-bright-gold/40"></div>
-                <div class="h-[0.5px] w-10 bg-bright-gold/30"></div>
-            </div>
         </section>
 
 
@@ -938,26 +942,30 @@
         <section class="px-10 mb-10">
             <div class="countdown-line py-4 flex justify-around items-center">
                 <div class="text-center">
-                    <span id="countdown-days" class="block text-2xl font-light font-display">00</span>
-                    <span class="block font-sans text-[8px] uppercase tracking-widest text-deep-grey/80"
+                    <span id="countdown-days" class="block text-3xl font-light font-display text-charcoal/80">00</span>
+                    <span class="block font-sans text-[10px] uppercase tracking-widest text-bright-gold/60"
                         data-t="days">Días</span>
                 </div>
                 <div class="text-center">
-                    <span id="countdown-hours" class="block text-2xl font-light font-display">00</span>
-                    <span class="block font-sans text-[8px] uppercase tracking-widest text-deep-grey/80"
+                    <span id="countdown-hours" class="block text-3xl font-light font-display text-charcoal/80">00</span>
+                    <span class="block font-sans text-[10px] uppercase tracking-widest text-bright-gold/60"
                         data-t="hours">Hrs</span>
                 </div>
                 <div class="text-center">
-                    <span id="countdown-minutes" class="block text-2xl font-light font-display">00</span>
-                    <span class="block font-sans text-[8px] uppercase tracking-widest text-deep-grey/80"
+                    <span id="countdown-minutes"
+                        class="block text-3xl font-light font-display text-charcoal/80">00</span>
+                    <span class="block font-sans text-[10px] uppercase tracking-widest text-bright-gold/60"
                         data-t="minutes">Min</span>
                 </div>
                 <div class="text-center">
-                    <span id="countdown-seconds" class="block text-2xl font-light font-display">00</span>
-                    <span class="block font-sans text-[8px] uppercase tracking-widest text-deep-grey/80"
+                    <span id="countdown-seconds"
+                        class="block text-3xl font-light font-display text-charcoal/80">00</span>
+                    <span class="block font-sans text-[10px] uppercase tracking-widest text-bright-gold/60"
                         data-t="seconds">Seg</span>
                 </div>
             </div>
+        </section>
+
         </section>
 
         <!---
@@ -1012,7 +1020,7 @@
         </section>
         --->
 
-        <section class="px-10 mt-32 space-y-24">
+        <section class="px-10 mt-12 space-y-24">
             <div class="text-center space-y-4">
                 <span class="material-symbols-outlined text-bright-gold/60 text-3xl font-light">calendar_today</span>
                 <h2 class="text-2xl font-display font-medium" data-t="saturday">Sábado, 09 de Mayo 2026
@@ -1030,15 +1038,15 @@
                     <p class="text-lg font-display text-deep-grey" data-t="cathedral_dedication">
                         "Nuestra Señora de
                         la Asunción"</p>
-                    <p class="text-[10px] uppercase tracking-widest text-charcoal/80">Miguel Hidalgo 17,
-                        Cuernavaca
-                        Centro, Centro, 62000 Cuernavaca, Mor., México</p>
                 </div>
                 <div class="border-[0.5px] border-bright-gold/20 p-1">
                     <img alt="Cathedral" class="w-full aspect-[3/4] object-cover" src="img/catedral.jpg" />
                 </div>
+                <p class="text-[12px] uppercase tracking-widest text-charcoal/80">Miguel Hidalgo 17,
+                    Cuernavaca
+                    Centro, Centro, 62000 Cuernavaca, Mor., México</p>
                 <a href="https://maps.app.goo.gl/BZAtB4zpGZLQbckc8" target="_blank"
-                    class="inline-flex items-center gap-2 mt-2 font-sans text-[8px] uppercase tracking-[0.4em] text-bright-gold hover:text-bright-gold transition-colors"
+                    class="inline-flex items-center gap-2 mt-2 font-sans text-[11px] uppercase tracking-[0.4em] text-bright-gold hover:text-bright-gold transition-colors"
                     data-t="location_button">
                     <span class="material-symbols-outlined text-xs">location_on</span>
                     Ver ubicación
@@ -1051,15 +1059,15 @@
                         Hotel
                         Boutique Casa de
                         Campo</p>
-                    <p class="text-[10px] uppercase tracking-widest text-charcoal/80">Mariano Abasolo
-                        101,
-                        Cuernavaca Centro, Centro, 62000 Cuernavaca, Mor., México</p>
                 </div>
                 <div class="border-[0.5px] border-bright-gold/20 p-1">
                     <img alt="Reception" class="w-full aspect-[4/3] object-cover" src="img/casadecampo.jpg" />
                 </div>
+                <p class="text-[12px] uppercase tracking-widest text-charcoal/80">Mariano Abasolo
+                    101,
+                    Cuernavaca Centro, Centro, 62000 Cuernavaca, Mor., México</p>
                 <a href="https://maps.app.goo.gl/W7pVbmNp5QnXdDys7" target="_blank"
-                    class="inline-flex items-center gap-2 mt-2 font-sans text-[8px] uppercase tracking-[0.4em] text-bright-gold hover:text-bright-gold transition-colors"
+                    class="inline-flex items-center gap-2 mt-2 font-sans text-[11px] uppercase tracking-[0.4em] text-bright-gold hover:text-bright-gold transition-colors"
                     data-t="location_button">
                     <span class="material-symbols-outlined text-xs">location_on</span>
                     Ver ubicación
@@ -1069,15 +1077,27 @@
                     Celebración</p>
             </div>
         </section>
-        <section class="px-5 py-24 mt-20 text-center">
+        <div class="flex items-center justify-center gap-3 py-12">
+            <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+            <div class="w-1.5 h-1.5 rotate-45 border border-bright-gold/60"></div>
+            <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+        </div>
+
+        <section class="px-5 py-12 text-center">
             <h3 class="text-2xl font-display italic mb-10" data-t="dress_code">Código de Vestimenta</h3>
             <div class="mb-6">
-                <span class="material-symbols-outlined text-4xl text-charcoal/50 font-extralight">apparel</span>
+                <span class="material-symbols-outlined text-4xl text-bright-gold/60 font-extralight">apparel</span>
             </div>
             <p class="text-xl font-display mb-2" data-t="etiquette">Formal</p>
             <p class="text-base font-display italic text-deep-grey leading-relaxed" data-t="dress_suggestion">
             </p>
         </section>
+        <div class="flex items-center justify-center gap-3 py-12">
+            <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+            <div class="w-1.5 h-1.5 rotate-45 border border-bright-gold/60"></div>
+            <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+        </div>
+
         <section class="px-10 py-24 text-center">
             <h3 class="text-2xl font-display italic mb-8" data-t="wedding_gift">Regalo de Bodas</h3>
             <p class="font-display italic text-lg text-deep-grey leading-relaxed mb-12" data-t="gift_text">
@@ -1089,18 +1109,18 @@
             <div class="max-w-[320px] mx-auto space-y-16">
                 <!-- Bank Account Card -->
                 <div
-                    class="shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-bright-gold/10 text-left relative group overflow-hidden">
+                    class="bg-white/50 shadow-[0_10px_40px_rgba(0,0,0,0.06)] border border-bright-gold/50 text-left relative group overflow-hidden transition-all duration-300">
                     <button
                         class="accordion-toggle w-full p-10 flex items-center gap-3 text-charcoal hover:bg-black/[0.01] transition-colors focus:outline-none">
                         <span
-                            class="material-symbols-outlined text-sm transition-transform duration-300">expand_more</span>
+                            class="material-symbols-outlined text-sm text-bright-gold/60 transition-transform duration-300">expand_more</span>
                         <span class="intimate-dedication !text-2xl !leading-none text-charcoal"
                             data-t="view_account">Ver
                             número de cuenta</span>
                     </button>
                     <div
                         class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-10">
-                        <div class="pb-10 space-y-3 text-charcoal/90 border-t border-bright-gold/5 pt-6">
+                        <div class="pb-10 space-y-3 text-charcoal/90 border-t border-bright-gold/30 pt-6">
                             <p class="font-display text-xl leading-tight">Banorte</p>
                             <p class="font-display text-xl leading-tight tracking-[0.05em]">0725 4001 3532 0270 78
                             </p>
@@ -1111,12 +1131,18 @@
 
                 <!-- Caja de sobres -->
                 <div class="flex flex-col items-center space-y-4">
-                    <span class="material-symbols-outlined text-5xl text-charcoal">mail</span>
+                    <span class="material-symbols-outlined text-5xl text-bright-gold/60 font-extralight">mail</span>
                     <p class="intimate-dedication !text-2xl !leading-none text-charcoal" data-t="envelope_box">
                         Caja de sobres</p>
                 </div>
             </div>
         </section>
+
+        <div class="flex items-center justify-center gap-3 py-12">
+            <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+            <div class="w-1.5 h-1.5 rotate-45 border border-bright-gold/60"></div>
+            <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+        </div>
 
         <section class="px-10 py-24 text-center">
             <h3 class="text-2xl font-display italic mb-12" data-t="suggestions_title">Sugerencias</h3>
@@ -1124,16 +1150,16 @@
             <div class="max-w-[320px] mx-auto space-y-6">
                 <!-- Lodging -->
                 <div
-                    class="shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-bright-gold/10 text-left relative overflow-hidden">
+                    class="bg-white/50 shadow-[0_10px_40px_rgba(0,0,0,0.06)] border border-bright-gold/50 text-left relative overflow-hidden transition-all duration-300">
                     <button
                         class="accordion-toggle w-full p-8 flex items-center gap-3 text-charcoal/80 hover:bg-black/[0.01] transition-colors focus:outline-none">
                         <span
-                            class="material-symbols-outlined text-sm transition-transform duration-300">expand_more</span>
+                            class="material-symbols-outlined text-sm text-bright-gold/60 transition-transform duration-300">expand_more</span>
                         <span class="intimate-dedication !text-2xl !leading-none text-charcoal"
                             data-t="lodging_label">Hospedaje</span>
                     </button>
                     <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-8">
-                        <div class="pb-10 space-y-4 text-charcoal border-t border-bright-gold/10 pt-6">
+                        <div class="pb-10 space-y-4 text-charcoal border-t border-bright-gold/30 pt-6">
                             <p data-t="hacienda_desc"><strong>Hotel Boutique Casa de Campo</strong></p>
                             <p data-t="fiesta_inn_desc">El lugar dónde se llevará a cabo el evento
                                 cuenta con
@@ -1159,16 +1185,16 @@
 
                 <!-- Tourist Places -->
                 <div
-                    class="shadow-[0_10px_40px_rgba(0,0,0,0.04)] border border-bright-gold/10 text-left relative overflow-hidden">
+                    class="bg-white/50 shadow-[0_10px_40px_rgba(0,0,0,0.06)] border border-bright-gold/50 text-left relative overflow-hidden transition-all duration-300">
                     <button
                         class="accordion-toggle w-full p-8 flex items-center gap-3 text-charcoal hover:bg-black/[0.01] transition-colors focus:outline-none">
                         <span
-                            class="material-symbols-outlined text-sm transition-transform duration-300">expand_more</span>
+                            class="material-symbols-outlined text-sm text-bright-gold/60 transition-transform duration-300">expand_more</span>
                         <span class="intimate-dedication !text-2xl !leading-none text-charcoal"
                             data-t="tourism_label">Lugares que visitar</span>
                     </button>
                     <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4">
-                        <div class="pb-10 pt-6 border-t border-bright-gold/10 text-charcoal space-y-8">
+                        <div class="pb-10 pt-6 border-t border-bright-gold/30 text-charcoal space-y-8">
                             <!-- Cathedral Card -->
                             <div class="flip-card">
                                 <div class="flip-card-inner">
@@ -1196,7 +1222,7 @@
                                             monasterios declarado Patrimonio de la Humanidad por la
                                             UNESCO.</p>
                                         <a href="https://maps.app.goo.gl/BZAtB4zpGZLQbckc8" target="_blank"
-                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[8px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
+                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[11px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
                                             data-t="location_button">
                                             <span class="material-symbols-outlined text-xs">location_on</span>
                                             Ver ubicación
@@ -1229,7 +1255,7 @@
                                             (1864–1867). Hoy
                                             funciona como museo y centro cultural.</p>
                                         <a href="https://maps.app.goo.gl/nNzaY5VHnjyLn5CV7" target="_blank"
-                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[8px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
+                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[11px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
                                             data-t="location_button">
                                             <span class="material-symbols-outlined text-xs">location_on</span>
                                             Ver ubicación
@@ -1266,7 +1292,7 @@
                                             regional.
                                         </p>
                                         <a href="https://goo.gl/maps/c58ue8wqh1L8QyCcA" target="_blank"
-                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[8px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
+                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[11px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
                                             data-t="location_button">
                                             <span class="material-symbols-outlined text-xs">location_on</span>
                                             Ver ubicación
@@ -1305,7 +1331,7 @@
                                             uno de los principales vestigios arqueológicos de
                                             Cuernavaca.</p>
                                         <a href="https://maps.app.goo.gl/kT6spYHtJoYHLPt28" target="_blank"
-                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[8px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
+                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[11px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
                                             data-t="location_button">
                                             <span class="material-symbols-outlined text-xs">location_on</span>
                                             Ver ubicación
@@ -1340,7 +1366,7 @@
                                             ciudad.</p>
                                         <a href="https://www.google.com/maps/place/Cascada+El+Salto+de+San+Ant%C3%B3n/@18.923168,-99.2533781,17z"
                                             target="_blank"
-                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[8px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
+                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[11px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
                                             data-t="location_button">
                                             <span class="material-symbols-outlined text-xs">location_on</span>
                                             Ver ubicación
@@ -1374,7 +1400,7 @@
                                             de México.
                                         </p>
                                         <a href="https://maps.app.goo.gl/7qR69ADZggMskYH18" target="_blank"
-                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[8px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
+                                            class="inline-flex items-center gap-2 mt-4 font-sans text-[11px] uppercase tracking-[0.4em] text-bright-gold/100 hover:text-bright-gold"
                                             data-t="location_button">
                                             <span class="material-symbols-outlined text-xs">location_on</span>
                                             Ver ubicación
@@ -1387,6 +1413,12 @@
                 </div>
             </div>
         </section>
+        <div class="flex items-center justify-center gap-3 py-12">
+            <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+            <div class="w-1.5 h-1.5 rotate-45 border border-bright-gold/60"></div>
+            <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+        </div>
+
         <section class="px-10 pt-20 pb-20 border-t border-bright-gold/10 text-center">
             <div class="text-center mb-10">
                 <h3 class="text-3xl font-display italic mb-2" data-t="rsvp_title">R.S.V.P.</h3>
@@ -1397,11 +1429,17 @@
             </div>
             <div class="flex justify-center pt-4">
                 <button id="open-rsvp-modal"
-                    class="w-full max-w-[300px] border border-bright-gold/30 bg-white text-bright-gold font-sans text-[10px] uppercase tracking-[0.4em] py-6 font-medium shadow-sm hover:bg-bright-gold/5 transition-all active:scale-95"
+                    class="w-full max-w-[300px] border border-bright-gold/50 bg-white/50 text-bright-gold font-sans text-[11px] uppercase tracking-[0.4em] py-6 font-semibold shadow-sm hover:bg-bright-gold/5 transition-all active:scale-95"
                     data-t="confirm_attendance">Confirmar
                     Asistencia</button>
             </div>
         </section>
+
+        <div class="flex items-center justify-center gap-3 py-12">
+            <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+            <div class="w-1.5 h-1.5 rotate-45 border border-bright-gold/60"></div>
+            <div class="h-[0.5px] w-12 bg-bright-gold/60"></div>
+        </div>
 
         <!-- Guest Book / Special Words Section -->
         <section class="px-10 pt-20 pb-40 text-center bg-ivory/50">
@@ -1414,7 +1452,7 @@
                 </div>
 
                 <div
-                    class="paper-texture p-8 shadow-[0_15px_45px_rgba(0,0,0,0.03)] border border-bright-gold/10 space-y-6 relative overflow-hidden group">
+                    class="paper-texture p-8 shadow-[0_15px_45px_rgba(0,0,0,0.03)] border border-bright-gold/50 space-y-6 relative overflow-hidden group">
                     <!-- Subtle background decoration -->
                     <div
                         class="absolute -top-10 -right-10 opacity-[0.03] transition-transform duration-1000 group-hover:rotate-12">
@@ -1423,18 +1461,18 @@
 
                     <div class="space-y-4 relative z-10">
                         <textarea id="guestbook-message"
-                            class="w-full bg-transparent border-b border-bright-gold/20 focus:border-bright-gold transition-colors py-4 font-display text-lg italic text-charcoal placeholder:text-deep-grey/20 placeholder:font-sans placeholder:text-xs placeholder:tracking-widest min-h-[120px] focus:ring-0 resize-none"
+                            class="w-full bg-transparent border-b border-bright-gold/50 focus:border-bright-gold transition-colors py-4 font-display text-lg italic text-charcoal placeholder:text-deep-grey/60 placeholder:font-sans placeholder:text-xs placeholder:tracking-widest min-h-[120px] focus:ring-0 resize-none"
                             data-t-placeholder="guestbook_message_placeholder"
                             placeholder="Escribe aquí tus palabras..."></textarea>
 
                         <input type="text" id="guestbook-signature"
-                            class="w-full bg-transparent border-b border-bright-gold/20 focus:border-bright-gold transition-colors py-4 font-display text-base text-charcoal/80 placeholder:text-deep-grey/20 placeholder:font-sans placeholder:text-[10px] placeholder:uppercase placeholder:tracking-[0.2em] focus:ring-0"
+                            class="w-full bg-transparent border-b border-bright-gold/50 focus:border-bright-gold transition-colors py-4 font-display text-base text-charcoal placeholder:text-deep-grey/60 placeholder:font-sans placeholder:text-[10px] placeholder:uppercase placeholder:tracking-[0.2em] focus:ring-0"
                             data-t-placeholder="guestbook_signature_placeholder"
                             placeholder="Con cariño... (ej: Familia Pérez)">
                     </div>
 
                     <button id="btn-send-message"
-                        class="w-full bg-white border border-bright-gold/30 text-bright-gold font-sans text-[9px] uppercase tracking-[0.4em] py-5 font-bold hover:bg-bright-gold/5 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+                        class="w-full bg-white/50 border border-bright-gold/50 text-bright-gold font-sans text-[11px] uppercase tracking-[0.4em] py-5 font-bold hover:bg-bright-gold/5 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
                         data-t="guestbook_submit">Enviar mensaje con amor</button>
 
                     <div id="guestbook-success-msg"
@@ -1714,13 +1752,13 @@
                 cortes_desc: "<strong>Palacio de Cortés</strong><br>El Palacio de Cortés es una construcción del siglo XVI mandada a edificar por Hernán Cortés, quien encabezó la expedición que derrotó al Imperio mexica y tomó Tenochtitlan en 1521; es uno de los edificios civiles más antiguos de México, combina elementos medievales con estilo renacentista y hoy funciona como museo regional.",
                 teopanzolco_desc: "<strong>Zona Arqueológica de Teopanzolco</strong><br>Es un centro ceremonial mexica construido entre los siglos XIII y XV, cuya estructura principal es un templo doble dedicado a Tláloc, dios de la lluvia, y Huitzilopochtli, dios de la guerra; se cree que fue un importante punto religioso y político en la región antes de la llegada de los españoles y hoy es uno de los principales vestigios arqueológicos de Cuernavaca.",
                 san_anton_desc: "<strong>La Cascada de San Antón</strong><br>La Cascada Salto de San Antón, es una caída de agua de aproximadamente 40 metros formada por roca volcánica, ubicada en una barranca natural al norte de Cuernavaca y considerada uno de los atractivos naturales más emblemáticos de la ciudad.",
-                tepoztlan_desc: "<strong>Tepoztlán</strong><br>Tepoztlán es un pueblo mágico de origen prehispánico ubicado al pie del Cerro del Tepozteco (a 30 minutos), famoso por su pirámide dedicada a Ometochtli, su ex convento del siglo XVI y su ambiente tradicional; hoy es uno de los Pueblos Mágicos más visitados de México.",
+                tepoztlan_desc: "<strong>Tepoztlán</strong><br>Tepoztlán es un pueblo mágico de origen prehispánico ubicado al pie del Cerro del Tepozteco (a 30 minutos de Cuernavaca), famoso por su pirámide dedicada a Ometochtli, su ex convento del siglo XVI y su ambiente tradicional; hoy es uno de los Pueblos Mágicos más visitados de México.",
                 hacienda_desc: "<strong>Hotel Boutique Casa de Campo</strong>",
                 fiesta_inn_desc: "El lugar dónde se llevará a cabo el evento cuenta con habitaciones disponibles, los detalles a continuación:<br><br><strong>*Opción 1: Reservar la noche del evento (1 noche)</strong><br>- Con impuestos $2,874.00 pesos en habitación para hasta 3 personas.<br>(Se puede ajustar a un máximo de 4 personas pagando $750 extra por día).<br><br><strong>*Opción 2: Reservar 1 día antes del evento y la noche del evento (2 noches)</strong><br>- Con impuestos $5,748.00 pesos en habitación para hasta 3 personas.<br>(Se puede ajustar a un máximo de 4 personas pagando $750 extra por día).<br>Incluye Cóctel de bienvenida para invitados hospedados durante 1 hora el día viernes.<br><br>Check in: 3 pm | Check out: 12 pm",
                 rsvp_contact_note: "Te contactaremos a la brevedad para coordinar los detalles del pago de tu estancia y otros pormenores (si aplica).",
                 guestbook_text: "Déjanos un mensaje con buenos deseos para nuestra nueva etapa",
                 guestbook_message_placeholder: "Escribe aquí tus palabras...",
-                guestbook_signature_placeholder: "Con cariño... (ej: Familia Pérez)",
+                guestbook_signature_placeholder: "Con cariño... (ej: Juan Pérez)",
                 guestbook_submit: "Enviar mensaje con amor",
                 guestbook_success: "¡Gracias por tus bellas palabras!"
             },
@@ -1816,13 +1854,13 @@
                 cortes_desc: "<strong>Cortés Palace</strong><br>The Cortés Palace is a 16th-century building commissioned by Hernán Cortés, who led the expedition that defeated the Aztec Empire and took Tenochtitlan in 1521. It is one of the oldest civil buildings in Mexico, blending medieval elements with Renaissance style, and now serves as a regional museum.",
                 teopanzolco_desc: "<strong>Teopanzolco Archaeological Zone</strong><br>It is a Mexica ceremonial center built between the 13th and 15th centuries. Its main structure is a double temple dedicated to Tlaloc, god of rain, and Huitzilopochtli, god of war. It is believed to have been an important religious and political hub in the region before the arrival of the Spaniards, and today it is one of Cuernavaca's principal archaeological remains.",
                 san_anton_desc: "<strong>San Antón Waterfall</strong><br>The Salto de San Antón Waterfall is a cascade of approximately 40 meters formed by volcanic rock, located in a natural canyon north of Cuernavaca and considered one of the city's most iconic natural attractions.",
-                tepoztlan_desc: "<strong>Tepoztlán</strong><br>Tepoztlán is a 'Magic Town' of pre-Hispanic origin located at the foot of the Tepozteco Hill (30 minutes away). It is famous for its pyramid dedicated to Ometochtli, its 16th-century former convent, and its traditional atmosphere; today it is one of Mexico's most visited Magic Towns.",
+                tepoztlan_desc: "<strong>Tepoztlán</strong><br>Tepoztlán is a 'Magic Town' of pre-Hispanic origin located at the foot of the Tepozteco Hill (30 minutes away from Cuernavaca). It is famous for its pyramid dedicated to Ometochtli, its 16th-century former convent, and its traditional atmosphere; today it is one of Mexico's most visited Magic Towns.",
                 hacienda_desc: "<strong>Casa de Campo Boutique Hotel</strong>",
                 fiesta_inn_desc: "The venue where the event will take place has rooms available, details below:<br><br><strong>*Option 1: Book the night of the event (1 night)</strong><br>- Including taxes $2,874.00 MXN for a room for up to 3 people.<br>(Can be adjusted for a maximum of 4 people for an extra $750 pesos per day).<br><br><strong>*Option 2: Book 1 day before the event and the night of the event (2 nights)</strong><br>- Including taxes $5,748.00 MXN for a room for up to 3 people.<br>(Can be adjusted for a maximum of 4 people for an extra $750 pesos per day).<br>Includes a 1-hour welcome cocktail for staying guests on Friday.<br><br>Check-in: 3 pm | Check-out: 12 pm",
                 rsvp_contact_note: "We will contact you shortly to coordinate your stay payment details and other arrangements (if applicable).",
                 guestbook_text: "Leave us a message with your best wishes for our new stage",
                 guestbook_message_placeholder: "Write your words here...",
-                guestbook_signature_placeholder: "With love... (eg: Pérez Family)",
+                guestbook_signature_placeholder: "With love... (eg: John Smith)",
                 guestbook_submit: "Send message with love",
                 guestbook_success: "Thank you for your beautiful words!"
             }
@@ -1980,7 +2018,7 @@
 
             <!-- Close Button -->
             <button id="close-modal"
-                class="absolute top-6 right-6 text-charcoal/20 hover:text-charcoal/40 transition-colors">
+                class="absolute top-6 right-6 text-charcoal/50 hover:text-charcoal/80 transition-colors">
                 <span class="material-symbols-outlined">close</span>
             </button>
 
@@ -1997,18 +2035,18 @@
 
                 <div class="flex items-center justify-center gap-8">
                     <button id="minus-guest"
-                        class="w-12 h-12 rounded-full border border-bright-gold/20 flex items-center justify-center text-bright-gold hover:bg-bright-gold/5 transition-colors">
+                        class="w-12 h-12 rounded-full border border-bright-gold/50 flex items-center justify-center text-bright-gold hover:bg-bright-gold/5 transition-colors">
                         <span class="material-symbols-outlined">remove</span>
                     </button>
                     <span id="guest-count-display" class="font-display text-5xl text-charcoal">1</span>
                     <button id="plus-guest"
-                        class="w-12 h-12 rounded-full border border-bright-gold/20 flex items-center justify-center text-bright-gold hover:bg-bright-gold/5 transition-colors">
+                        class="w-12 h-12 rounded-full border border-bright-gold/50 flex items-center justify-center text-bright-gold hover:bg-bright-gold/5 transition-colors">
                         <span class="material-symbols-outlined">add</span>
                     </button>
                 </div>
 
                 <button id="btn-next"
-                    class="w-full bg-bright-gold text-white font-sans text-[10px] uppercase tracking-[0.4em] py-6 font-bold shadow-lg mt-4"
+                    class="w-full bg-white/50 border border-bright-gold/50 text-bright-gold font-sans text-[11px] uppercase tracking-[0.4em] py-6 font-bold shadow-sm mt-4 hover:bg-bright-gold/5 transition-all"
                     data-t="next_button">Siguiente</button>
             </div>
 
@@ -2021,7 +2059,7 @@
                 <div id="guest-names-container" class="space-y-4 max-h-[30vh] overflow-y-auto px-1 custom-scrollbar">
                 </div>
                 <button id="btn-to-hotel"
-                    class="w-full bg-bright-gold text-white font-sans text-[10px] uppercase tracking-[0.4em] py-6 font-bold shadow-lg mt-4"
+                    class="w-full bg-white/50 border border-bright-gold/50 text-bright-gold font-sans text-[11px] uppercase tracking-[0.4em] py-6 font-bold shadow-sm mt-4 hover:bg-bright-gold/5 transition-all"
                     data-t="next_button">Siguiente</button>
             </div>
 
@@ -2031,8 +2069,8 @@
                     <h3 class="font-display italic text-2xl text-charcoal" data-t="hotel_step_title">¿Deseas reservar
                         habitación?</h3>
                     <div
-                        class="bg-bright-gold/5 py-3 px-6 rounded-2xl inline-block mx-auto my-2 border border-bright-gold/10">
-                        <p class="font-sans text-[11px] uppercase tracking-widest text-bright-gold/80 font-medium">
+                        class="bg-bright-gold/5 py-3 px-6 rounded-2xl inline-block mx-auto my-2 border border-bright-gold/30">
+                        <p class="font-sans text-[11px] uppercase tracking-widest text-bright-gold font-medium">
                             <span data-t="hotel_guest_reminder">Invitados seleccionados:</span>
                             <span id="hotel-guest-count-rem" class="font-bold ml-1">1</span>
                         </p>
@@ -2044,17 +2082,17 @@
 
                 <div class="flex gap-4">
                     <button id="hotel-yes-btn"
-                        class="flex-1 py-6 border border-bright-gold/20 rounded-xl font-sans text-xs font-bold uppercase tracking-widest text-charcoal/60 transition-all active:scale-95"
+                        class="flex-1 py-6 border border-bright-gold/50 rounded-xl font-sans text-xs font-bold uppercase tracking-widest text-charcoal/60 transition-all active:scale-95"
                         data-t="hotel_yes">Sí</button>
                     <button id="hotel-no-btn"
-                        class="flex-1 py-6 border border-bright-gold/20 rounded-xl font-sans text-xs font-bold uppercase tracking-widest text-charcoal/60 transition-all active:scale-95"
+                        class="flex-1 py-6 border border-bright-gold/50 rounded-xl font-sans text-xs font-bold uppercase tracking-widest text-charcoal/60 transition-all active:scale-95"
                         data-t="hotel_no">No</button>
                 </div>
 
-                <div id="hotel-options" class="hidden space-y-6 border-t border-bright-gold/10 pt-8">
+                <div id="hotel-options" class="hidden space-y-6 border-t border-bright-gold/30 pt-8">
                     <div
-                        class="bg-bright-gold/5 border border-bright-gold/10 p-16 mx-6 rounded-2xl flex flex-col items-center text-center gap-4 mb-4">
-                        <span class="material-symbols-outlined text-bright-gold/60 text-lg mt-0.5">info</span>
+                        class="bg-bright-gold/5 border border-bright-gold/30 p-16 mx-6 rounded-2xl flex flex-col items-center text-center gap-4 mb-4">
+                        <span class="material-symbols-outlined text-bright-gold/80 text-lg mt-0.5">info</span>
                         <p class="text-[15px] leading-relaxed text-charcoal/80 italic font-medium"
                             data-t="room_suggest">
                             Las habitaciones son para 3 personas, pero es posible albergar hasta un máximo de 4
@@ -2066,7 +2104,7 @@
                         <label class="font-sans text-[9px] uppercase tracking-widest text-bright-gold"
                             data-t="rooms_label">Número de habitaciones</label>
                         <input type="number" id="room-count" min="1" max="5" value="1"
-                            class="w-full bg-transparent border-b border-bright-gold/20 py-2 font-display text-xl focus:border-bright-gold focus:ring-0">
+                            class="w-full bg-transparent border-b border-bright-gold/50 py-2 font-display text-xl focus:border-bright-gold focus:ring-0">
                     </div>
 
                     <div class="space-y-4">
@@ -2096,7 +2134,7 @@
                                 class="text-[11px] font-bold opacity-80 italic" data-t="extra_person_note">(Máximo 1 por
                                 habitación)</span></label>
                         <input type="number" id="extra-person-count" min="0" max="1" value="0"
-                            class="w-full bg-transparent border-b border-bright-gold/20 py-2 font-display text-xl focus:border-bright-gold focus:ring-0">
+                            class="w-full bg-transparent border-b border-bright-gold/50 py-2 font-display text-xl focus:border-bright-gold focus:ring-0">
                     </div>
 
                     <label class="flex items-center gap-3 cursor-pointer group">
@@ -2114,10 +2152,10 @@
                     <div id="hotel-v-msg"
                         class="hidden p-4 rounded-lg text-[11px] font-sans leading-relaxed text-charcoal"></div>
 
-                    <div class="pt-4 border-t border-bright-gold/10 space-y-2">
-                        <p class="font-sans text-[9px] uppercase tracking-widest text-bright-gold/60"
+                    <div class="pt-4 border-t border-bright-gold/30 space-y-2">
+                        <p class="font-sans text-[9px] uppercase tracking-widest text-bright-gold font-bold"
                             data-t="total_est_label">Total estimado:</p>
-                        <div id="price-breakdown" class="font-sans text-[11px] text-charcoal/60 italic space-y-0.5">
+                        <div id="price-breakdown" class="font-sans text-[11px] text-charcoal/80 italic space-y-0.5">
                             <!-- Breakdown injected here -->
                         </div>
                         <p id="total-price-display" class="font-display text-3xl text-charcoal">$2,874.00 MXN</p>
@@ -2125,7 +2163,7 @@
                 </div>
 
                 <button id="btn-submit"
-                    class="w-full bg-bright-gold text-white font-sans text-[10px] uppercase tracking-[0.4em] py-6 font-bold shadow-lg"
+                    class="w-full bg-white/50 border border-bright-gold/50 text-bright-gold font-sans text-[11px] uppercase tracking-[0.4em] py-6 font-bold shadow-sm mt-4 hover:bg-bright-gold/5 transition-all"
                     data-t="submit_button">Confirmar</button>
             </div>
 
@@ -2135,8 +2173,8 @@
                 <h3 class="font-display italic text-3xl text-charcoal" data-t="rsvp_success">¡Muchas gracias!</h3>
                 <p class="text-deep-grey/80 font-display text-lg" data-t="rsvp_success_text">Tu asistencia ha sido
                     registrada.</p>
-                <div class="px-8 pt-4 border-t border-bright-gold/10">
-                    <p class="text-[14px] leading-relaxed text-charcoal/60 italic" data-t="rsvp_contact_note">
+                <div class="px-8 pt-4 border-t border-bright-gold/30">
+                    <p class="text-[14px] leading-relaxed text-charcoal italic" data-t="rsvp_contact_note">
                         Te contactaremos a la brevedad para coordinar los detalles del pago de tu estancia y otros
                         pormenores.
                     </p>
@@ -2273,7 +2311,7 @@
             for (let i = 1; i <= guestCount; i++) {
                 const input = document.createElement('input');
                 input.type = 'text';
-                input.className = 'w-full bg-transparent border-b border-bright-gold/20 focus:border-bright-gold focus:ring-0 py-4 font-display text-lg placeholder:italic placeholder:text-deep-grey/20';
+                input.className = 'w-full bg-transparent border-b border-bright-gold/50 focus:border-bright-gold focus:ring-0 py-4 font-display text-xl text-charcoal placeholder:italic placeholder:text-deep-grey/60';
                 input.placeholder = currentLang === 'es' ? `Nombre Completo Invitado ${i}` : `Guest ${i} Full Name`;
                 input.required = true;
                 // Only allow letters and spaces
