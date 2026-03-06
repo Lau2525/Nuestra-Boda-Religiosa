@@ -281,13 +281,15 @@
             content: "";
             position: fixed;
             inset: 0;
-            background-image: url("img/fondo flores.jpg");
-            background-size: 800px;
-            background-repeat: repeat;
-            opacity: 0.15;
+            background-image: url("img/fondo_nuevo.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.2;
+            /* Slightly increased for better visibility of the relief */
             pointer-events: none;
             z-index: -1;
-            filter: sepia(25%) brightness(1.1) contrast(0.9);
+            filter: sepia(10%) brightness(1.05) contrast(1.0);
         }
 
         .content-container {
